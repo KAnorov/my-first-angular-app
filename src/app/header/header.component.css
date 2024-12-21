@@ -1,0 +1,27 @@
+p {
+    color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.round {
+    border-radius: 50%;
+    width: 50px;
+    aspect-ratio: 1;
+    border: 1px solid gray;
+}
+
+.flex {
+    display: flex;
+    margin: 10px;
+}
+
+.flex>div {
+    margin: 5px;
+}

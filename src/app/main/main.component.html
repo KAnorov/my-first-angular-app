@@ -1,0 +1,21 @@
+<fieldset>
+    <legend>Main</legend>
+    <p>main works!</p>
+    <div>2 + 2 = {{2+2}}</div>
+    {{value}} <br /><br />
+    <button title="{{value}}">{{value}} </button><br /><br />
+    <button [title]="value">{{value}} </button><br /><br />
+    <button (click)="togleCondition()">{{condition}}</button><br /><br />
+    <input [(ngModel)]="value">
+
+   
+    <h3>Pipes!</h3>
+    Pipe currency: <span>{{ 1 / 7 | currency }}</span><br />
+    Pipe percent: <span>{{ 1 / 7 | percent }}</span><br />
+    Pipe uppercase: <span>{{ 'aaaa' | uppercase }}</span><br />
+    Pipe lowercase: <span>{{ 'ZZZZ' | lowercase }}</span><br />
+    Pipe date: <span>{{ today | date }}</span><br />
+    Pipe date: <span>{{ today | date: 'dd/MM/yyyy' }}</span><br />
+    Pipe slice: <span>{{ 'Hello World!' | slice: 6:11 }}</span><br />
+    Pipe number: <span>{{ PI | number: '3.5-5' }}</span><br />
+</fieldset>

@@ -1,0 +1,15 @@
+<fieldset>
+    <legend>Header</legend>
+    <h3>Классы и стили</h3>
+    <p>header works!</p>
+    <input [value]="value">
+  <div class="flex">
+    <div [class]="{ round: true, green: condition }"></div>
+    <div [class]="['round', condition ? '': 'red' ]"></div>
+    <div [class.round]="true" [class.green]="condition"></div>
+    <div class="round" [class.red]="!condition"></div>
+  </div>
+  <button [style.height.px]="h" (click)="increaseH()">increaseH </button><br><br>
+  <button [style.height.px]="height" (click)="dicreaseH()">dicreaseH </button><br><br>
+  <button (click)="toggleCondition()">{{condition}}</button><br/><br/>
+</fieldset>
